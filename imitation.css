@@ -48,7 +48,7 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
-   Student prompt: Make the orange Mission Tiger box 200x200 and place it at the top left. */
+   Student prompt: Make the orange Mission Tiger box 200x200 at top left and style “*see back panel” smaller and black. */
 .mission-callout {
   position: absolute;
   top: -2px;
@@ -71,6 +71,7 @@ main {
 .mission-callout strong {
   top: 5px;
   font-size: 11px;
+  text-align: left;
 }
 
 .mission-callout p {
@@ -78,6 +79,13 @@ main {
   font-size: 10px;
   font-family: futura;
   font-weight: bold;
-  text-shadow: 0 3px grey, -3px 0 blue;
+  text-shadow: 0 1px grey, -1px 0 blue;
+}
+
+.mission-callout .back-panel-note {
+  font-size: 7px;
+  color: black;
+  text-shadow: none;
+  font-weight: 200;
 }
 /* End AI-assisted CSS */
