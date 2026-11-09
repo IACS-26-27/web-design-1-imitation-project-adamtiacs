@@ -69,12 +69,15 @@ main {
 }
 
 .mission-callout strong {
-  font-size: 20px;
+  top: 5px;
+  font-size: 11px;
 }
 
 .mission-callout p {
   margin: 8px 0 0;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: futura;
   font-weight: bold;
+  text-shadow: 0 3px grey, -3px 0 blue;
 }
 /* End AI-assisted CSS */
