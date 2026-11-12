@@ -1,1 +1,211 @@
 /* CSS for your imitation here */
+main {
+  position: relative;
+  width: 336.02px;
+  height: 534px;
+  border: 3px solid black; /* remove later */
+  background-color: #574ef5
+}
+
+.large-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid yellow;
+  background-color: yellow;
+  height: 35px;
+ 
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use rounded “LARGE SIZE” letters and position them right of the overlapping badge, as in the reference. */
+.large-size p {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  color: red;
+  font-weight: 600;
+  -webkit-text-stroke: 0.15px red;
+  transform: translateX(20px);
+}
+/* End AI-assisted CSS */
+
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use a script-style substitute for the custom Kellogg's wordmark, with a slightly thicker outline and rightward skew. */
+.title h1 {
+  position: relative;
+  left: -5px;
+  width: fit-content;
+  font-family: "Lobster", cursive;
+  color: #c91532;
+  font-weight: 400;
+  line-height: 0.01;
+  text-shadow: -0.75px 0 white, 0.75px 0 white, 0 -0.75px white, 0 0.75px white, 0 1px 0 #17395b;
+  transform: rotate(-2deg) skewX(3deg);
+  transform-origin: center;
+}
+/* End AI-assisted CSS */
+
+.title p {
+  font-size: 30px;
+  font-weight: 1000;
+  color: blue;
+}
+
+.ff {
+  font-family: futura;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: skewx(-15deg);
+  color: white;
+  rotate: -3deg;
+  line-height: 0.8;
+  text-shadow: 0 3px grey, -3px 0 blue;
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Put red backing only behind the text on each line, without a larger box around it. */
+.tiger-slogan {
+  position: absolute;
+  top: 42%;
+  right: 10px;
+  width: max-content;
+  color: #ffeb16;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-fill-color: #ffeb16;
+  transform: skewX(8deg) rotate(-5deg);
+  transform-origin: center;
+}
+
+.tiger-slogan p {
+  width: max-content;
+  margin: 0 auto;
+  background-color: #e31837;
+}
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Style the vitamin callout as a pale blue circle with small labels and a large 8. */
+.vitamin-badge {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #c9d8f0;
+  color: #2867a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.vitamin-badge .badge-label {
+  font-size: 4px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.vitamin-badge strong {
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.vitamin-badge .badge-details {
+  font-size: 5px;
+  font-weight: bold;
+  line-height: 1;
+}
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and style the heading. */
+.mission-callout {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  box-sizing: border-box;
+  width: 90px;
+  height: 85px;
+  padding: 5px 4px 6px;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}
+
+.mission-callout::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background-color: #f58220;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+/* Keep the words above the orange layer inside the badge. */
+.mission-callout strong {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+  transform: translateX(1px);
+}
+
+.mission-callout .tiger-word {
+  color: #ffc266;
+  text-shadow: -1px 0 #17395b, 0 1px #17395b, 1px 0 #17395b, 0 -1px #17395b;
+}
+
+.mission-callout .mission-word {
+  text-shadow: -1px -1px 0 #17395b, 1px -1px 0 #17395b, -1px 1px 0 #17395b, 1px 1px 0 #17395b;
+}
+
+.mission-callout p {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 1;
+  font-family: futura;
+  font-weight: bold;
+  text-shadow: 0 1px grey, -1px 0 blue;
+}
+
+.mission-callout .back-panel-note {
+  font-size: 7px;
+  line-height: 1;
+  color: black;
+  text-shadow: none;
+  font-weight: 200;
+}
+/* End AI-assisted CSS */
