@@ -73,13 +73,14 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
-   Student prompt summary: Place the yellow slogan on the middle right with a thin red text outline and tilt it in the opposite direction. */
+   Student prompt summary: Keep the slogan's red backing clipped to the text block, with no extra area outside it. */
 .tiger-slogan {
   position: absolute;
   top: 42%;
   right: 10px;
   z-index: 1;
-  width: 92px;
+  width: max-content;
+  background-color: #e31837;
   color: #ffeb16;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -88,8 +89,7 @@ main {
   line-height: 0.95;
   text-align: center;
   text-transform: uppercase;
-  -webkit-text-stroke: 0.6px #e31837;
-  paint-order: stroke fill;
+  -webkit-text-fill-color: #ffeb16;
   transform: skewX(8deg) rotate(-5deg);
   transform-origin: center;
 }
