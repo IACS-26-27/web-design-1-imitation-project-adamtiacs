@@ -57,17 +57,16 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
-   Student prompt: Make the orange Mission Tiger box 200x200 at top left and style “*see back panel” smaller and black. */
+   Student prompt summary: Style the Mission Tiger callout like the shield-shaped badge in the reference. */
 .mission-callout {
   position: absolute;
   top: -2px;
   left: 8px;
   box-sizing: border-box;
   width: 90px;
-  height: 100px;
+  height: 85px;
   padding: 11px;
-  border: 2px solid white;
-  background-color: #f58220;
+  background-color: white;
   color: white;
   display: flex;
   flex-direction: column;
@@ -75,15 +74,28 @@ main {
   align-items: center;
   text-align: center;
   font-family: Arial, sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}
+
+.mission-callout::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: #f58220;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
 .mission-callout strong {
+  position: relative;
+  z-index: 1;
   top: 5px;
   font-size: 11px;
   text-align: left;
 }
 
 .mission-callout p {
+  position: relative;
+  z-index: 1;
   margin: 8px 0 0;
   font-size: 10px;
   font-family: futura;
@@ -92,6 +104,8 @@ main {
 }
 
 .mission-callout .back-panel-note {
+  position: relative;
+  z-index: 1;
   font-size: 7px;
   color: black;
   text-shadow: none;
