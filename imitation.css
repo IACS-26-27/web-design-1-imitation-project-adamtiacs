@@ -73,14 +73,13 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
-   Student prompt summary: Keep the slogan's red backing clipped to the text block, with no extra area outside it. */
+   Student prompt summary: Put red backing only behind the text on each line, without a larger box around it. */
 .tiger-slogan {
   position: absolute;
   top: 42%;
   right: 10px;
   z-index: 1;
   width: max-content;
-  background-color: #e31837;
   color: #ffeb16;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -97,6 +96,9 @@ main {
 .tiger-slogan span,
 .tiger-slogan strong {
   display: block;
+  width: max-content;
+  margin: 0 auto;
+  background-color: #e31837;
 }
 /* End AI-assisted CSS */
 
