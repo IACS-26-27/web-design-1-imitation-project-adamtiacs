@@ -73,6 +73,34 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Place the yellow slogan on the middle right with a thin red text outline and tilt it in the opposite direction. */
+.tiger-slogan {
+  position: absolute;
+  top: 42%;
+  right: 10px;
+  z-index: 1;
+  width: 92px;
+  color: #ffeb16;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.6px #e31837;
+  paint-order: stroke fill;
+  transform: skewX(8deg) rotate(-5deg);
+  transform-origin: center;
+}
+
+.tiger-slogan span,
+.tiger-slogan strong {
+  display: block;
+}
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
    Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and style the heading. */
 .mission-callout {
   position: absolute;
