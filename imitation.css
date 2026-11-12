@@ -57,7 +57,7 @@ main {
 }
 
 /* AI-assisted CSS — GitHub Copilot
-   Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and refine the heading. */
+   Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and style the heading. */
 .mission-callout {
   position: absolute;
   top: -2px;
@@ -98,6 +98,10 @@ main {
 .mission-callout .tiger-word {
   color: #ffc266;
   text-shadow: -1px 0 #17395b, 0 1px #17395b, 1px 0 #17395b, 0 -1px #17395b;
+}
+
+.mission-callout .mission-word {
+  text-shadow: -1px -1px 0 #17395b, 1px -1px 0 #17395b, -1px 1px 0 #17395b, 1px 1px 0 #17395b;
 }
 
 .mission-callout p {
