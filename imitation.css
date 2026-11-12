@@ -100,6 +100,44 @@ main {
 /* End AI-assisted CSS */
 
 /* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Style the vitamin callout as a pale blue circle with small labels and a large 8. */
+.vitamin-badge {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #c9d8f0;
+  color: #2867a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.vitamin-badge .badge-label {
+  font-size: 4px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.vitamin-badge strong {
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.vitamin-badge .badge-details {
+  font-size: 5px;
+  font-weight: bold;
+  line-height: 1;
+}
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
    Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and style the heading. */
 .mission-callout {
   position: absolute;
