@@ -31,12 +31,22 @@ main {
   flex-direction: column;
 }
 
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use a script-style substitute for the custom Kellogg's wordmark, with a slightly thicker outline and rightward skew. */
 .title h1 {
-  font-style: italic;
-  color: red;
-  font-weight: 800;
+  position: relative;
+  left: -5px;
+  align-self: center;
+  width: fit-content;
+  font-family: "Lobster", cursive;
+  color: #c91532;
+  font-weight: 400;
   line-height: 0.01;
+  text-shadow: -0.75px 0 white, 0.75px 0 white, 0 -0.75px white, 0 0.75px white, 0 1px 0 #17395b;
+  transform: rotate(-2deg) skewX(3deg);
+  transform-origin: center;
 }
+/* End AI-assisted CSS */
 
 .title p {
   font-size: 30px;
