@@ -10,20 +10,26 @@ main {
 .large-size {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 3px solid yellow;
   background-color: yellow;
   height: 35px;
  
 }
 
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use rounded “LARGE SIZE” letters and position them right of the overlapping badge, as in the reference. */
 .large-size p {
-  padding-left: 30px;
-  margin-top: 6px;
-  font-size: 24px;
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 30px;
+  line-height: 1;
   color: red;
-  font-weight: 1000;
-
+  font-weight: 600;
+  -webkit-text-stroke: 0.15px red;
+  transform: translateX(20px);
 }
+/* End AI-assisted CSS */
 
 .title {
   display: flex;
