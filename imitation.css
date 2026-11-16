@@ -4,7 +4,7 @@ main {
   width: 336.02px;
   height: 534px;
   border: 3px solid black; /* remove later */
-  background-color: #574ef5
+  background-color: #574ef5;
 }
 
 .large-size {
@@ -28,6 +28,22 @@ main {
   font-weight: 600;
   -webkit-text-stroke: 0.15px red;
   transform: translateX(20px);
+}
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Center the AI-generated Tony the Tiger image and size it to fit the reference, with simple positioning. */
+img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.large-size,
+.title {
+  position: relative;
 }
 /* End AI-assisted CSS */
 
