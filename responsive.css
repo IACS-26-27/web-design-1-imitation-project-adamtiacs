@@ -259,13 +259,12 @@ img {
 
   main {
     /* AI-assisted CSS — GitHub Copilot
-       Student prompt summary: Enlarge the design to about 500px on medium screens while keeping its proportions. */
-    width: 98%;
-    max-width: 484px;
-    aspect-ratio: 336 / 534;
+       Student prompt summary: Use a few lines to enlarge the whole design proportionally on medium screens. */
+    width: 336px;
+    height: 534px;
+    zoom: 1.42;
     margin: 0 auto;
     /* End AI-assisted CSS */
-    border: 8px solid purple;
   }
 
   /* Laptop label */
