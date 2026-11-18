@@ -234,6 +234,16 @@ img {
 /* BEGIN MOBILE RULES */
 @media only screen and (max-width: 767px) {
   /* Code for mobile phones only: */
+  /* AI-assisted CSS — GitHub Copilot
+     Student prompt summary: Make the design fit phone screens at unknown widths with simpler CSS, keeping the package composition. */
+  main {
+    width: 98%;
+    max-width: 336px;
+    /* Keep the package's original shape as it gets narrower. */
+    aspect-ratio: 336 / 534;
+    margin: 0 auto;
+  }
+  /* End AI-assisted CSS */
 
   /* Mobile label */
   main::before {
@@ -247,6 +257,10 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 1399px) {
   /* Code for medium width and bigger : */
 
+  main {
+    border: 8px solid purple;
+  }
+
   /* Laptop label */
   main::before {
     content: "Laptop";
@@ -258,6 +272,9 @@ img {
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
   /* Code for wide screen only */
+  main {
+    border: 8px solid orange;    
+  }
 
   /* Widescreen label */
   main::before {
