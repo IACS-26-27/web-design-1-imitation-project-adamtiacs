@@ -275,6 +275,18 @@ img {
   /* End laptop label */
 }
 
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Scale the full package to its base size so it fits in a laptop viewport without scrolling. */
+@media only screen and (min-width: 768px) and (max-height: 800px) {
+  main {
+    width: 336px;
+    height: 534px;
+    zoom: 1;
+    margin: 0 auto;
+  }
+}
+/* End AI-assisted CSS */
+
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
   /* Code for wide screen only */
