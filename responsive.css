@@ -370,9 +370,108 @@ img {
 
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
-  /* Code for wide screen only */
+  /* AI-assisted CSS — GitHub Copilot
   main {
-    border: 8px solid orange;    
+    box-sizing: border-box;
+    width: 92%;
+    max-width: 1600px;
+    height: 650px;
+    margin: 24px auto;
+    overflow: hidden;
+    border: 8px solid black;
+    border-radius: 24px;
+    background-color: #574ef5;
+    box-shadow: 0 16px 38px #20245b40;
+  }
+
+  .large-size {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    box-sizing: border-box;
+    width: 40%;
+    height: 68px;
+  }
+
+  .large-size p {
+    font-size: 46px;
+    transform: translateX(28px);
+  }
+
+  .title {
+    position: absolute;
+    top: 27%;
+    left: 7%;
+    width: 36%;
+  }
+
+  .title h1 {
+    margin: 0 0 12px;
+    font-size: 68px;
+    line-height: 1;
+  }
+
+  .ff {
+    font-size: 88px;
+  }
+
+  img {
+    left: auto;
+    right: 21%;
+    bottom: 0;
+    width: 35%;
+    height: auto;
+  }
+
+  .mission-callout {
+    top: 5%;
+    right: 3.5%;
+    left: auto;
+    width: 170px;
+    height: 158px;
+    padding: 9px 8px;
+  }
+
+  .mission-callout strong {
+    font-size: 18px;
+  }
+
+  .mission-callout p {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .mission-callout .back-panel-note {
+    font-size: 10px;
+  }
+
+  .tiger-slogan {
+    top: 57%;
+    right: 3%;
+    left: auto;
+    width: 17%;
+    font-size: 28px;
+  }
+
+  .vitamin-badge {
+    top: auto;
+    bottom: 8%;
+    left: 6%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .vitamin-badge .badge-label {
+    font-size: 8px;
+  }
+
+  .vitamin-badge strong {
+    font-size: 48px;
+  }
+
+  .vitamin-badge .badge-details {
+    font-size: 9px;
   }
 
   /* Widescreen label */
@@ -381,6 +480,7 @@ img {
     background-color: #00438888;
   }
   /* End widescreen label */
+  /* End AI-assisted CSS */
 }
 
 /* BACK TO CODE FOR ALL SIZES */
