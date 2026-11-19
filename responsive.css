@@ -1,8 +1,249 @@
 /* Code for all screen sizes */
+main {
+  position: relative;
+  border: 3px solid black;
+  /* remove later */
+  background-color: #574ef5;
+}
+
+.large-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid yellow;
+  background-color: yellow;
+  height: 35px;
+
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use rounded “LARGE SIZE” letters and position them right of the overlapping badge, as in the reference. */
+.large-size p {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  color: red;
+  font-weight: 600;
+  -webkit-text-stroke: 0.15px red;
+  transform: translateX(20px);
+}
+
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Center the AI-generated Tony the Tiger image and size it to fit the reference, with simple positioning. */
+img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.large-size,
+.title {
+  position: relative;
+}
+
+/* End AI-assisted CSS */
+
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Use a script-style substitute for the custom Kellogg's wordmark, with a slightly thicker outline and rightward skew. */
+.title h1 {
+  position: relative;
+  left: -5px;
+  width: fit-content;
+  font-family: "Lobster", cursive;
+  color: #c91532;
+  font-weight: 400;
+  line-height: 0.01;
+  text-shadow: -0.75px 0 white, 0.75px 0 white, 0 -0.75px white, 0 0.75px white, 0 1px 0 #17395b;
+  transform: rotate(-2deg) skewX(3deg);
+  transform-origin: center;
+}
+
+/* End AI-assisted CSS */
+
+.title p {
+  font-size: 30px;
+  font-weight: 1000;
+  color: blue;
+}
+
+.ff {
+  font-family: futura;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: skewx(-15deg);
+  color: white;
+  rotate: -3deg;
+  line-height: 0.8;
+  text-shadow: 0 3px grey, -3px 0 blue;
+}
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Put red backing only behind the text on each line, without a larger box around it. */
+.tiger-slogan {
+  position: absolute;
+  top: 42%;
+  right: 10px;
+  width: max-content;
+  color: #ffeb16;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-fill-color: #ffeb16;
+  transform: skewX(8deg) rotate(-5deg);
+  transform-origin: center;
+}
+
+.tiger-slogan p {
+  width: max-content;
+  margin: 0 auto;
+  background-color: #e31837;
+}
+
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Style the vitamin callout as a pale blue circle with small labels and a large 8. */
+.vitamin-badge {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #c9d8f0;
+  color: #2867a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.vitamin-badge .badge-label {
+  font-size: 4px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.vitamin-badge strong {
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.vitamin-badge .badge-details {
+  font-size: 5px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* End AI-assisted CSS */
+
+/* AI-assisted CSS — GitHub Copilot
+   Student prompt summary: Shape the Mission Tiger callout like the reference, fit all text without changing font sizes, and style the heading. */
+.mission-callout {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  box-sizing: border-box;
+  width: 90px;
+  height: 85px;
+  padding: 5px 4px 6px;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}
+
+.mission-callout::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background-color: #f58220;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+/* Keep the words above the orange layer inside the badge. */
+.mission-callout strong {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+  transform: translateX(1px);
+}
+
+.mission-callout .tiger-word {
+  color: #ffc266;
+  text-shadow: -1px 0 #17395b, 0 1px #17395b, 1px 0 #17395b, 0 -1px #17395b;
+}
+
+.mission-callout .mission-word {
+  text-shadow: -1px -1px 0 #17395b, 1px -1px 0 #17395b, -1px 1px 0 #17395b, 1px 1px 0 #17395b;
+}
+
+.mission-callout p {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 1;
+  font-family: futura;
+  font-weight: bold;
+  text-shadow: 0 1px grey, -1px 0 blue;
+}
+
+.mission-callout .back-panel-note {
+  font-size: 7px;
+  line-height: 1;
+  color: black;
+  text-shadow: none;
+  font-weight: 200;
+}
+
+/* End AI-assisted CSS */
 
 /* BEGIN MOBILE RULES */
 @media only screen and (max-width: 767px) {
   /* Code for mobile phones only: */
+  /* AI-assisted CSS — GitHub Copilot
+     Student prompt summary: Make the design fit phone screens at unknown widths with simpler CSS, keeping the package composition. */
+  main {
+    width: 98%;
+    max-width: 336px;
+    /* Keep the package's original shape as it gets narrower. */
+    aspect-ratio: 336 / 534;
+    margin: 0 auto;
+  }
+  /* End AI-assisted CSS */
 
   /* Mobile label */
   main::before {
@@ -14,7 +255,109 @@
 
 /* BEGIN MEDIUM WIDTH RULES */
 @media only screen and (min-width: 768px) and (max-width: 1399px) {
-  /* Code for medium width and bigger : */
+  /* AI-assisted CSS — GitHub Copilot
+     Student prompt summary: Move the tiger left and the Mission callout to its upper right, add space before the slogan, and simplify the laptop styling. */
+  main {
+    box-sizing: border-box;
+    width: 94%;
+    max-width: 1120px;
+    height: 560px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 8px solid black;
+    border-radius: 24px;
+    background-color: #574ef5;
+    box-shadow: 0 16px 38px #20245b40;
+  }
+
+  .large-size {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    width: 47%;
+    height: 58px;
+  }
+
+  .large-size p {
+    font-size: 42px;
+    transform: translateX(28px);
+  }
+
+  .title {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 47%;
+  }
+
+  .title h1 {
+    margin: 0 0 8px;
+    font-size: 52px;
+    line-height: 1;
+  }
+
+  .ff {
+    font-size: 68px;
+  }
+
+  img {
+    left: auto;
+    right: 7%;
+    bottom: 0;
+    width: 45%;
+    height: auto;
+  }
+
+  .mission-callout {
+    top: 1%;
+    right: 1%;
+    left: auto;
+    width: 150px;
+    height: 140px;
+    padding: 8px 7px;
+  }
+
+  .mission-callout strong {
+    font-size: 16px;
+  }
+
+  .mission-callout p {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  .mission-callout .back-panel-note {
+    font-size: 9px;
+  }
+
+  .tiger-slogan {
+    top: 60%;
+    right: auto;
+    left: 5%;
+    width: 47%;
+    font-size: 26px;
+  }
+
+  .vitamin-badge {
+    top: auto;
+    bottom: 8%;
+    left: 6%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .vitamin-badge .badge-label {
+    font-size: 7px;
+  }
+
+  .vitamin-badge strong {
+    font-size: 43px;
+  }
+
+  .vitamin-badge .badge-details {
+    font-size: 8px;
+  }
 
   /* Laptop label */
   main::before {
@@ -22,11 +365,115 @@
     background-color: #45454588;
   }
   /* End laptop label */
+  /* End AI-assisted CSS */
 }
 
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
-  /* Code for wide screen only */
+  /* AI-assisted CSS — GitHub Copilot
+     Student prompt summary: Make a good widescreen layout for the existing cereal-box design. */
+  main {
+    box-sizing: border-box;
+    width: 92%;
+    max-width: 1600px;
+    height: 650px;
+    margin: 24px auto;
+    overflow: hidden;
+    border: 8px solid black;
+    border-radius: 24px;
+    background-color: #574ef5;
+    box-shadow: 0 16px 38px #20245b40;
+  }
+
+  .large-size {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    box-sizing: border-box;
+    width: 40%;
+    height: 68px;
+  }
+
+  .large-size p {
+    font-size: 46px;
+    transform: translateX(28px);
+  }
+
+  .title {
+    position: absolute;
+    top: 27%;
+    left: 7%;
+    width: 36%;
+  }
+
+  .title h1 {
+    margin: 0 0 12px;
+    font-size: 68px;
+    line-height: 1;
+  }
+
+  .ff {
+    font-size: 88px;
+  }
+
+  img {
+    left: auto;
+    right: 21%;
+    bottom: 0;
+    width: 35%;
+    height: auto;
+  }
+
+  .mission-callout {
+    top: 5%;
+    right: 3.5%;
+    left: auto;
+    width: 170px;
+    height: 158px;
+    padding: 9px 8px;
+  }
+
+  .mission-callout strong {
+    font-size: 18px;
+  }
+
+  .mission-callout p {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .mission-callout .back-panel-note {
+    font-size: 10px;
+  }
+
+  .tiger-slogan {
+    top: 57%;
+    right: 3%;
+    left: auto;
+    width: 17%;
+    font-size: 28px;
+  }
+
+  .vitamin-badge {
+    top: auto;
+    bottom: 8%;
+    left: 6%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .vitamin-badge .badge-label {
+    font-size: 8px;
+  }
+
+  .vitamin-badge strong {
+    font-size: 48px;
+  }
+
+  .vitamin-badge .badge-details {
+    font-size: 9px;
+  }
 
   /* Widescreen label */
   main::before {
@@ -34,6 +481,7 @@
     background-color: #00438888;
   }
   /* End widescreen label */
+  /* End AI-assisted CSS */
 }
 
 /* BACK TO CODE FOR ALL SIZES */
