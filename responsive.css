@@ -332,9 +332,10 @@ img {
   }
 
   .tiger-slogan {
-    top: 70%;
+    top: 60%;
     right: auto;
-    left: 19%;
+    left: 5%;
+    width: 47%;
     font-size: 26px;
   }
 
