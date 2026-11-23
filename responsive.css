@@ -371,12 +371,12 @@ img {
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
   /* AI-assisted CSS — GitHub Copilot
-     Student prompt summary: Make a good widescreen layout for the existing cereal-box design. */
+     Student prompt summary: Make the wide-screen layout use more vertical space and enlarge its elements. */
   main {
     box-sizing: border-box;
     width: 92%;
     max-width: 1600px;
-    height: 650px;
+    height: 85vh;
     margin: 24px auto;
     overflow: hidden;
     border: 8px solid black;
@@ -391,11 +391,11 @@ img {
     left: 5%;
     box-sizing: border-box;
     width: 40%;
-    height: 68px;
+    height: 82px;
   }
 
   .large-size p {
-    font-size: 46px;
+    font-size: 58px;
     transform: translateX(28px);
   }
 
@@ -408,19 +408,19 @@ img {
 
   .title h1 {
     margin: 0 0 12px;
-    font-size: 68px;
+    font-size: 86px;
     line-height: 1;
   }
 
   .ff {
-    font-size: 88px;
+    font-size: 110px;
   }
 
   img {
     left: auto;
     right: 21%;
     bottom: 0;
-    width: 35%;
+    width: 40%;
     height: auto;
   }
 
@@ -428,23 +428,23 @@ img {
     top: 5%;
     right: 3.5%;
     left: auto;
-    width: 170px;
-    height: 158px;
+    width: 200px;
+    height: 185px;
     padding: 9px 8px;
   }
 
   .mission-callout strong {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .mission-callout p {
-    margin-top: 6px;
-    font-size: 14px;
+    margin-top: 8px;
+    font-size: 16px;
     line-height: 1.1;
   }
 
   .mission-callout .back-panel-note {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .tiger-slogan {
@@ -452,27 +452,27 @@ img {
     right: 3%;
     left: auto;
     width: 17%;
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .vitamin-badge {
     top: auto;
     bottom: 8%;
     left: 6%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .vitamin-badge .badge-label {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .vitamin-badge strong {
-    font-size: 48px;
+    font-size: 56px;
   }
 
   .vitamin-badge .badge-details {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   /* Widescreen label */
