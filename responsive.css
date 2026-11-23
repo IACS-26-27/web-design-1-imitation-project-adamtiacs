@@ -371,7 +371,7 @@ img {
 /* BEGIN WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
   /* AI-assisted CSS — GitHub Copilot
-     Student prompt summary: Make the wide-screen layout use more vertical space and enlarge its elements. */
+     Student prompt summary: Make the wide-screen elements bigger, but keep the tiger from blocking the text. */
   main {
     box-sizing: border-box;
     width: 92%;
@@ -391,11 +391,11 @@ img {
     left: 5%;
     box-sizing: border-box;
     width: 40%;
-    height: 82px;
+    height: 106px;
   }
 
   .large-size p {
-    font-size: 58px;
+    font-size: 76px;
     transform: translateX(28px);
   }
 
@@ -408,12 +408,12 @@ img {
 
   .title h1 {
     margin: 0 0 12px;
-    font-size: 86px;
+    font-size: 110px;
     line-height: 1;
   }
 
   .ff {
-    font-size: 110px;
+    font-size: 140px;
   }
 
   img {
@@ -428,51 +428,51 @@ img {
     top: 5%;
     right: 3.5%;
     left: auto;
-    width: 200px;
-    height: 185px;
+    width: 250px;
+    height: 230px;
     padding: 9px 8px;
   }
 
   .mission-callout strong {
-    font-size: 21px;
+    font-size: 26px;
   }
 
   .mission-callout p {
-    margin-top: 8px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 20px;
     line-height: 1.1;
   }
 
   .mission-callout .back-panel-note {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .tiger-slogan {
     top: 57%;
     right: 3%;
     left: auto;
-    width: 17%;
-    font-size: 36px;
+    width: 18%;
+    font-size: 46px;
   }
 
   .vitamin-badge {
     top: auto;
     bottom: 8%;
     left: 6%;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   .vitamin-badge .badge-label {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .vitamin-badge strong {
-    font-size: 56px;
+    font-size: 70px;
   }
 
   .vitamin-badge .badge-details {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   /* Widescreen label */
